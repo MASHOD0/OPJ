@@ -26,5 +26,11 @@ class Box_main{
 		ob1.depth = 4;
 		ob1.colour();
 		int volume = ob1.volume();
+
+		Box ob2 = new Box();
+		ob2.width = 2;
+		ob2.height = 5;
+		ob2.depth = 6;
+		int vol_2 = ob2.volume();
 	}
 }
