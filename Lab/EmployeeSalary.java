@@ -1,4 +1,4 @@
-import java.util.Scanner;
+9import java.util.Scanner;
 /*
 import java.util.Scanner;
 public class EmployeeSalary

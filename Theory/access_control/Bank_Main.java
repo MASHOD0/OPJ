@@ -3,8 +3,8 @@
 
 
 class Bank_details{
-	public string name;
-	public string address;
+	public String name;
+	public String address;
 	private int account_number;
 
 	void get_acc_no(int a){
