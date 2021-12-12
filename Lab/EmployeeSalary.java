@@ -44,7 +44,7 @@ public class EmployeeSalary{
         double g_income = b_salary + da + hra + cca;
         double it = 0.1 * g_income;
         double deduction = pf + pt + it;
-        double n_income = g_income - deduction;
+        double n_in come = g_income - deduction;
         
         System.out.println("The salary of employee "+ name + " with ID " + eid + " is Rs." + n_income);
 
