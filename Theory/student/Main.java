@@ -53,5 +53,6 @@ class Main{
         System.out.println("Average of student 1 is "+s1.average());
         System.out.println("Average of student 2 is "+s2.average());
         System.out.println("Average of student 3 is "+s3.average());
+
     }
 } 
