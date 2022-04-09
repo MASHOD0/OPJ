@@ -4,8 +4,9 @@
  * for 2 people 1000/-
  * for 4 people 2000/-
  * for 6 people 5000/-
+ * Take details of the customers and display the pricing accordingly
  */
-
+import java.util.Scanner;
  class taxi{
     int fare;
     String name1;
@@ -38,12 +39,23 @@
  }
 public class main {
     public static void main(String[] args) {
-        taxi t1 = new taxi("A","B");
-        taxi t2 = new taxi("A","B","C","D");
-        taxi t3 = new taxi("A","B","C","D","E","F");
-        System.out.println("Fare for 2 people is "+t1.fare);
-        System.out.println("Fare for 4 people is "+t2.fare);
-        System.out.println("Fare for 6 people is "+t3.fare);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of family members");
+        int n = sc.nextInt();
+        System.out.println("Enter the name of the family members");
+        if (n == 2) {
+            taxi t = new taxi(sc.next(), sc.next());
+            System.out.println("The fare is " + t.fare);
+        } else if (n == 4) {
+            taxi t = new taxi(sc.next(), sc.next(), sc.next(), sc.next());
+            System.out.println("The fare is " + t.fare);
+        } else if (n == 6) {
+            taxi t = new taxi(sc.next(), sc.next(), sc.next(), sc.next(), sc.next(), sc.next());
+            System.out.println("The fare is " + t.fare);
+        } else {
+            System.out.println("Invalid number of family members");
+        }
+
     }
 }
 
