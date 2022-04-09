@@ -1,4 +1,13 @@
+class Random{
+    int a;
+    int b;
+    Random(int a, int b){
+        a = this.a;
+        b = this.b;
+    }
+}
 interface Demo{
+    Random r1= new Random(1 ,2);
     int a = 10;
     void callme();
     void show();
