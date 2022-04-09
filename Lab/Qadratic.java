@@ -17,6 +17,7 @@ class Qadratic{
 			System.out.println("first root:"+ ((b-d)/2*a) );
 			System.out.println("second root:"+ ((b+d)/2*a));
 		}
+	
 		else{
 			System.out.println("no solution exists");
 		}
